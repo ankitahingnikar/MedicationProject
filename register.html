@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("images/loginpage.jpg");
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container{width:35rem;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(200%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(245, 40, 145, 0.8);
+    padding: 20px 25px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+</head>
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: rgb(168, 240, 177);
+  color: green;
+  margin-bottom: 10px;
+  display: none;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea,
+select {
+  background: gray;
+  border: 1px;
+  margin-bottom: 25px;
+  box-shadow: 2px;
+  color: beige;
+  background-color: rgb(142, 143, 223);
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  height: auto;
+  font-size: 15px;
+}
+
+<!---select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}-->
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+body 
+{
+  font-family:sans-serif; 
+  background: -webkit-linear-gradient(to right, #155799, #159957);  
+  background: linear-gradient(to right, #155799, #159957); 
+  color:whitesmoke;
+}
+</style>
+<h2>Registration Page</h2>
+<div class="bg-img" style="width:100%;">
+  <form class="container">
+	
+    <h1>Register</h1>
+    <div class="alert"></div>
+
+    <fieldset>
+     
+      <label class="" for="name">Name:</label>
+      <input type="text" name="name" value="" id="name" required />
+
+      <label class="" for="email">Email:</label>
+      <input type="email" name="email" value="" id="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" value="" id="password" required />
+	
+	<label for="password">Comfirm Password:</label>
+      <input type="password" name="password" value="" id="password" required />
+
+	<label for="password">Contact:</label>
+      <input type="text" name="contact" value="" id="contact" required />
+    </fieldset>
+
+	<p class="register">Already Have Account?  <a href="loginpage.html">Login here!</a></p>
+      <button type="submit" class="btn"><a href="loginpage.html">Register</a></button>
+  </form>
+</div>
+
+</body>
+</html>
+
+
+
+
